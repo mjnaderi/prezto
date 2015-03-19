@@ -11,3 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Source tmpzshrc
+if [[ -s "${ZDOTDIR:-$HOME}/.tmpzshrc" ]]; then
+    source "${ZDOTDIR:-$HOME}/.tmpzshrc"
+fi
