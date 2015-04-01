@@ -16,3 +16,9 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.tmpzshrc" ]]; then
     source "${ZDOTDIR:-$HOME}/.tmpzshrc"
 fi
+
+# Base16 Shell Color Theme
+# Pick theme from: http://chriskempson.github.io/base16/
+BASE16_THEME="bright.dark"
+BASE16_THEME_FILE="$HOME/.base16-shell/base16-$BASE16_THEME.sh"
+[[ -s $BASE16_THEME_FILE ]] && source $BASE16_THEME_FILE
