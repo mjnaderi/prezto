@@ -28,3 +28,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.base16-shell" ]]; then
     BASE16_THEME_FILE="$HOME/.base16-shell/base16-$TODAY_THEME.sh"
     [[ -s $BASE16_THEME_FILE ]] && source $BASE16_THEME_FILE
 fi
+
+# Activate Comment in Interactive mode
+setopt interactivecomments
