@@ -21,7 +21,7 @@ fi
 # Pick theme from: http://chriskempson.github.io/base16/
 if [[ -s "${ZDOTDIR:-$HOME}/.base16-shell" ]]; then
     # Applies one of these themes each day.
-    THEMES="mocha.dark paraiso.dark bespin.dark solarized.dark railscasts.dark flat.dark londontube.dark atelierdune.dark atelierlakeside.dark"
+    THEMES="mocha.dark paraiso.dark bespin.dark solarized.dark railscasts.dark flat.dark atelierdune.dark atelierlakeside.dark"
     CNT=`echo $THEMES | wc -w`
     IND=$((`date +%j`%$CNT+1))
     TODAY_THEME=`echo $THEMES | cut -d " " -f $IND`
