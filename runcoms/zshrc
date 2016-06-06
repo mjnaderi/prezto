@@ -29,5 +29,10 @@ if [[ -s "$HOME/.base16-shell" ]]; then
     [[ -s $BASE16_THEME_FILE ]] && source $BASE16_THEME_FILE
 fi
 
+# Enable Shell Extension for Desk (https://github.com/jamesob/desk)
+if [[ -s "$HOME/.zdesk" ]]; then
+    fpath=($HOME/.zdesk/shell_plugins/zsh $fpath)
+fi
+
 # Activate Comment in Interactive mode
 setopt interactivecomments
