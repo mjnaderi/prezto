@@ -36,3 +36,5 @@ fi
 
 # Activate Comment in Interactive mode
 setopt interactivecomments
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
